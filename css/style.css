@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.row{
+    margin-left:  -8px;
+    margin-right: -8px;
+    
+}
+.row::after {
+content:'';
+display:block;
+clear: both;
+}
+.col{
+    float:left;
+    padding-left:8px;
+    padding-right:8px;
+
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.main{
+display: inline-block;
+
+}
+.header{
+height: 60px; 
+background-color: black ;
+position: fixed;
+z-index: 1;
+left:0;
+right:0;
+top:0;
+overflow: hidden;
+}
+
+
+
+#nav > li >a {
+    color:white;
+    text-transform: uppercase ;
+}
+#nav li{
+    
+position: relative;
+}
+#nav li a{
+  
+text-decoration: none;
+   padding: 0px 24px ;
+  line-height: 60px ;
+  display:  inline-block;
+}
+#nav li:hover #subnav{
+    display: block;
+}  
+#nav #subnav{
+    display: none;
+position:absolute;
+min-width: 160px;
+background-color:white;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+ #nav #subnav a{
+color: black;
+display: block;
+font-size: 20px ;
+
+
+ }
+ 
+.slider{
+    min-height: 700px ;
+    
+
+}
+
+html{
+ font-family: Arial, Helvetica, sans-serif ;
+ scroll-behavior: smooth;
+}
+
+    
+
+#nav >li:hover> a,
+ #nav #subnav li:hover  { 
+    color: black;
+    background: rgb(54, 46, 46);
+    
+}
+#trung {
+    min-height: 700px ;
+background-color:black;
+}
+#nav >li{
+    display: inline-block;
+}
+#nav,#subnav{
+    list-style-type: none;
+}
+#nav li:hover #subnav{
+    display: block;
+}
+
+
+#nav{
+    display: inline-block;
+}
+.ti-angle-down{
+    font-size: 13px;
+}
+
+
+.ti-search{
+    color:white;
+    font-size: 30px;
+   
+}
+
+.search-btn{
+    float: right;
+    line-height:60px;
+    padding: 0 30px;
+    
+}
+.header .mobile-menu-btn{
+    float: right;
+    line-height:60px;
+    padding: 0 30px;
+    color: white ;
+}
+.header .mobile-menu-btn:hover{
+    color:black;
+    background: white;
+}
+.header .search-btn:hover{
+    color:white;
+    background-color: red;
+    cursor: grab;
+}
+.slider{
+    position: relative;
+  margin-top: 60px ;
+background: url("https://www.kienguru.vn/hs-fs/hubfs/chuong-trinh-toan-lop-10-1.png?width=1024&name=chuong-trinh-toan-lop-10-1.png") top center/ cover no-repeat ;
+  padding-top: 50% ; 
+ 
+  
+}
+ .slider  .text-content{
+      position: absolute;
+      bottom: 50px;
+width: 100% ;
+text-align: center;
+color:red;
+
+  
+}
+.slider-2{
+    height: 250px;
+ width: 800px ;
+ margin-left: auto ;
+ margin-right: auto ;
+
+}
+.text-heading{
+    font-size: 20px ;
+   
+}
+.text-description{
+    font-size: 20px ;
+    margin-top: 10px ;
+    
+}
+.slider-3{
+    height: 1000px;
+   background: black;
+    
+}
+.content-section{
+    padding: 64px 0 ;
+    
+}
+.section-heading{
+    text-align: center;
+    font-size: 30px ;
+    font-weight: 500 ;
+    letter-spacing: 4px ;
+}
+.section-sub-heading{
+    text-align: center;
+    font-size: 15px ;
+    margin-top: 25px ;
+    font-style: italic;
+    color: rgb(78, 73, 73) ;
+}
+.about-text{
+    margin-top:  25px;
+text-align: justify;
+line-height: 1.6 ;
+
+
+}
+.section-tour{
+    text-align: center;
+    font-size: 30px ;
+    font-weight: 500 ;
+    letter-spacing: 4px ;
+    color: white;
+}
+.section-sub-tour{
+    text-align: center;
+    font-size: 15px ;
+    margin-top: 25px ;
+    font-style: italic;
+    color: rgb(78, 73, 73) ;
+
+}
+.tour{
+    margin-top: 100px ;
+}
+.ticket-list{
+    background: white;
+    margin-top: 60px ;
+    list-style: none;
+}
+.ticket-list .sold-out {
+    margin-left: 14px  ;
+background: #f44336 ;
+color: white;
+padding: 3px 4px
+
+}
+.ticket-list .quantity {
+    float: right;
+    width:24px;
+    height: 24px;
+    background: black;
+    border-radius: 50% ;
+    text-align: center ;
+    line-height: 24px ;
+    color: white;
+}
+.ticket-list li{
+    border-bottom: 1px solid #ddd ;
+    color: #757575 ;
+    font-size: 15px ;
+    padding: 11px 16px 
+
+}
+
+
+.places-list{
+
+margin-top: 32px ;
+margin-bottom: 48px;
+}
+.place-item{
+    background: black;
+width: 33.33333%;
+
+}
+.place-img{
+width: 100%;
+display:block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-heading{
+font-size: 15px;
+font-weight: 600 ;
+}
+.place-body{
+background: white;
+padding:16px;
+font-size: 15px;
+
+}
+.place-time{
+margin-top: 15px;
+opacity: 0.6;
+}
+.place-desc{
+margin-top: 15px ;
+line-height: 1.6;
+}
+.place-buy-btn{
+    margin-top:10px;
+color:white;
+text-decoration:none ;
+background:black;
+padding:11px 16px;
+display:inline-block;
+
+
+}
+.place-buy-btn:hover {
+    color:white;
+    background:rgb(87, 46, 46);
+}
+.contact{
+    margin-top: 100px;
+}
+.slider-4{
+    height: 400px;
+    
+}
+.contact-content{
+    margin-top: 48px;
+
+}
+.contact-info{
+    line-height: 1.6 ;
+
+    font-size: 18px ;
+    padding: 0 200px
+}
+.contact-info i[class*='ti-'] {
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px ;
+}
+.contact-form .form-control{
+padding: 11px ;
+
+border: 1px solid rgb(95, 87, 87);
+width: 100%;
+outline:none ;
+}
+.contact-form .form-submit-btn{
+background: black;
+color: white;
+margin-top: 16px !important;
+border: none;
+padding: 10px 16px ;
+float:right;
+
+
+}
+
+.slider-6{
+    background: black ;
+}
+.map{
+    height: 550px;
+    text-align: center;
+   
+}
+.footer{
+    padding: 64px 16px ;
+    text-align: center;
+    margin-top: 50px;
+ 
+ }
+ .social-list{
+ 
+  font-size: 24px ;
+ }
+ .social-list a{
+     text-decoration: none;
+     color: rgb(82, 79, 79);
+ }
+ 
+ .social-list a:hover{
+   color: rgba(0,0,0,0.3);
+   
+ }
+ .copyright a {
+     
+     color: black;
+ }
+ .copyright a:hover{
+     color: rgba(0,0,0,0.3);
+ }
+ .copyright{
+     margin-top: 15px ;
+ }
+
+
+
+
+
+
+
